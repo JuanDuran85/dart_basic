@@ -1,11 +1,11 @@
 void main(List<String> args) {
   // ?Arithmetic operators
-  
+
   // + Add
   // - Subtract
   // * Multiply
   // / Divide
-  // % Modulus Get the remainder of an integer division 
+  // % Modulus Get the remainder of an integer division
   // ~/ Truncate: Divide, returning an integer result
   // -expr Unary minus, also known as negation (reverse the sign of the expression)
 
@@ -73,15 +73,23 @@ void main(List<String> args) {
   int f = 10;
   print("F: $f");
   String response = f > 5 ? 'Greater than 5' : 'Lower than 5';
-  print(response); 
+  print(response);
   int? x;
   int? g = x ?? c;
   print(g);
-
 
   String personOne = "Juan";
   String personTwo = "Maria";
 
   print(personOne == personTwo);
+  print(personOne != personTwo);
 
+  // is: operator to check if an object is of a certain type
+  print(personOne is int);
+  print(f is! String);
+
+int? h;
+h = 10;
+h ??= 20;
+print(h);
 }
