@@ -88,8 +88,8 @@ void main(List<String> args) {
   print(personOne is int);
   print(f is! String);
 
-int? h;
-h = 10;
-h ??= 20;
-print(h);
+  int? h;
+  h = 10;
+  h ??= 20;
+  print(h);
 }
