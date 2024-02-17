@@ -13,6 +13,4 @@ void main(List<String> args) {
   stdout.writeln('What is your lastname?');
   String name2 = stdin.readLineSync() ?? 'Duran';
   stdout.writeln('Hello $name2');
-
-
 }
