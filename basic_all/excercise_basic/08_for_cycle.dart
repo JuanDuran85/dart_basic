@@ -12,4 +12,11 @@ void main(List<String> args) {
   for (var i = 0; i < 11; i++) {
     stdout.writeln('$number x $i = ${number * i}');
   }
+
+ // .length is a property of List to get the length of the list
+  List<String> names = ['Haley', 'Jarod', 'Waldo'];
+
+  for (var i = 0; i < names.length; i++) {
+    print(names[i]);
+  }
 }
