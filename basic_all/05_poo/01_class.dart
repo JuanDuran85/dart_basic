@@ -3,7 +3,7 @@ import 'classes/person.dart';
 void main(List<String> args) {
   // ---------- class
 
-  Person personOne = new Person();
+  Person personOne = new Person("Message for the constructor", rank: 2323);
   print(personOne);
 
   // ---------- class with properties.
@@ -18,4 +18,6 @@ void main(List<String> args) {
   personOne.city = 'Amazonas';
   print(personOne.city);
   print(personOne);
+
+  new Person.newPersonOne();
 }
