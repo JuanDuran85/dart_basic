@@ -22,4 +22,17 @@ void main(List<String> args) {
 
   print('the ceil for the number: $numberX, is / ${numberX.ceil()} / ');
 
+  // ceilToDouble: Returns the least integer double value no smaller than this.
+  print('the ceilToDouble for the number: $numberY, is / ${numberY.ceilToDouble()} / ');
+
+  // round: Returns the integer closest to the number.
+  print('the round of the number: $numberX, is / ${numberX.round()} /');
+
+  // roundToDouble: Returns the integer double value closest to the number.
+  print('the roundToDouble of the number: $numberX, is / ${numberX.roundToDouble()} /');
+
+  // clamp: Returns this num clamped to be in the range lowerLimit-upperLimit.
+  print(
+      'the clamp of the number: $numberX, is / ${numberX.clamp(36, 38)} /');
+
 }
