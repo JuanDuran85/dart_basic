@@ -82,8 +82,4 @@ void main(List<String> args) {
   print('names: $names');
   final newNamesList = names.map((name) => name.toUpperCase()).toList();
   print('newNamesList: $newNamesList');
-
-
-
-  
 }
