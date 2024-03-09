@@ -25,7 +25,7 @@ class Person {
     To resolve this, DART allows you to create multiple constructors with different names of the form: class_name.constructor_name(parameters).
    */
 
-  Person.newPersonOne({ String messageContructorIn = 'New person'}) {
+  Person.newPersonOne({String messageContructorIn = 'New person'}) {
     this.messageContructor = messageContructorIn;
     print('messageContructor in newPersonOne: $messageContructor');
   }
