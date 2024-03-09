@@ -34,4 +34,11 @@ void main(List<String> args) {
   //? 8. removeWhere: Removes all entries where the given predicate returns true. Returns a new map with the removed entries.
   person.removeWhere((key, value) => key == 'age');
   print('New person without age - RemoveWhere: ${person}');
+
+  //? 9. forEach: Applies the function to each element in the map.
+  person.forEach((key, value) { print('$key: $value'); });
+
+  //? 10. map: Returns a new map with all the entries of this map where the value satisfies the given predicate.
+  final newPerson = person.map((key, value) => MapEntry(key, value.toString().toUpperCase()));
+  print('New person - map: ${newPerson}');
 }
