@@ -42,7 +42,10 @@ void main(List<String> args) {
   print('Substring between 3 and 7: ${fullName1.substring(3, 7)}');
 
   //? 8. IndexOf: Returns the index of the first occurrence of the specified substring in this string, or -1 if not found.
-  print('indexOf ' ': ${fullName1.indexOf(' ')}');
+  print('indexOf \' \': ${fullName1.indexOf(' ')}');
+
+  //? 9. Split: Returns a list of substrings split from this string.
+  print('Split at space: ${fullName1.split(' ')}');
 
   //? Operator []: Returns the character at the given index in the string.
   print('Operator [0]: ${fullName1[0]}');
@@ -52,4 +55,12 @@ void main(List<String> args) {
   //? Operator *: Returns a string with the specified number of copies of this string.
   print('Operator *: ${fullName1 * 2}');
 
+
+  print('last letter: ${fullName1.lastIndexOf(RegExp(r'n'))}');
+  int index = fullName1.lastIndexOf(RegExp(r'n'));
+  List<String> letters = fullName1.split('');
+  letters[index] = letters[index].toUpperCase();
+  print('new full name: ${letters.join()}');
+  print('upperCase last letter: ${fullName1}');
+  print('UpperCase last letter: ${fullName1[fullName1.length -1].toUpperCase()}');
 }
