@@ -31,5 +31,10 @@ void main(List<String> args) {
 
   //? 5. asMap: Returns a Map view of the list.
   print('asMap ${list1.asMap()}');
+  Map mapList = list1.asMap();
+  print(mapList[1]);
+  Map mapName = names.asMap();
+  print(mapName);
+  print(mapName[0]);
 
 }
