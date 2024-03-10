@@ -13,9 +13,8 @@ void getCountryInfo() async {
     print('Fronteras: ');
     for (var borders in info.borders!) {
       String indivualBorder = borders.toLowerCase();
-      String firstLetter = indivualBorder[0];
       print(
-          '  ${indivualBorder.replaceAll(firstLetter, firstLetter.toUpperCase())}');
+          '  ${indivualBorder.replaceAll(indivualBorder[0], indivualBorder[0].toUpperCase())}');
     }
     print('Languages: ${info.languages?.spa}');
     print('Latitud: ${info.latlng?[0]}');
