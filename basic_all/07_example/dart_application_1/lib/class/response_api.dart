@@ -1,5 +1,8 @@
 import 'dart:convert';
 
+import 'package:dart_application_1/class/persons.dart';
+import 'package:dart_application_1/class/support.dart';
+
 RequestResponse requestResponseFromJson(String str) =>
     RequestResponse.fromJson(json.decode(str));
 
@@ -44,57 +47,5 @@ class RequestResponse {
             ? []
             : List<dynamic>.from(data!.map((x) => x.toJson())),
         "support": support?.toJson(),
-      };
-}
-
-class Persons {
-  int? id;
-  String? email;
-  String? firstName;
-  String? lastName;
-  String? avatar;
-
-  Persons({
-    required this.id,
-    required this.email,
-    required this.firstName,
-    required this.lastName,
-    required this.avatar,
-  });
-
-  factory Persons.fromJson(Map<String, dynamic> json) => Persons(
-        id: json["id"],
-        email: json["email"],
-        firstName: json["first_name"],
-        lastName: json["last_name"],
-        avatar: json["avatar"],
-      );
-
-  Map<String, dynamic> toJson() => {
-        "id": id,
-        "email": email,
-        "first_name": firstName,
-        "last_name": lastName,
-        "avatar": avatar,
-      };
-}
-
-class Support {
-  String? url;
-  String? text;
-
-  Support({
-    required this.url,
-    required this.text,
-  });
-
-  factory Support.fromJson(Map<String, dynamic> json) => Support(
-        url: json["url"],
-        text: json["text"],
-      );
-
-  Map<String, dynamic> toJson() => {
-        "url": url,
-        "text": text,
       };
 }

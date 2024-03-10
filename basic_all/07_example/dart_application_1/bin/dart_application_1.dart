@@ -1,6 +1,6 @@
-import 'package:http/http.dart' as http;
-
 import 'package:dart_application_1/class/response_api.dart';
+// ignore: depend_on_referenced_packages
+import 'package:http/http.dart' as http;
 
 void main(List<String> arguments) async {
   // final url = Uri.http('reqres.in', '/api/users?page=2');
