@@ -30,4 +30,18 @@ void main(List<String> args) {
   streamController.sink.close();
   
   print('End main function');
+
+
+  emitNumbers()
+    .listen((data) => print('receive data: $data'),
+    onError: (error) => print('Error: $error'),
+    onDone: () => print('End stream'),
+    cancelOnError: false);
+
+}
+
+Stream<int> emitNumbers() {
+  return Stream.periodic(const Duration(seconds: 1), (int value){
+    return value;
+  }).take(5);
 }
