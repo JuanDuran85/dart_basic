@@ -22,13 +22,15 @@ void main(List<String> args) {
     //--------------------------------------------------
 
   final Map<String, dynamic> rawJson = {
-    'name': 'Tony Stark',
+    'name': 'Tony',
     'power': 'Money',
-    'isAlive': true
+    'isAlive': true,
+    'lastName': 'Stark'
   };
   final Hero ironMan = new Hero.fromJson(rawJson);
 
   print(ironMan);
   print(ironMan.name);
   print(ironMan.power);
+  print(ironMan.getLastName);
 }
